@@ -28,7 +28,7 @@ SECRET_KEY = '0-xj_qd4pyru7ht9mryqo^av2hvazl_j(8%upx+fu(p=0skc-9'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['13.124.208.170','localhost','127.0.0.1']
+ALLOWED_HOSTS = ['cmail.uy.to', '13.124.208.170','localhost','127.0.0.1']
 
 
 # Application definition
@@ -79,11 +79,11 @@ WSGI_APPLICATION = 'confMail.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'confMail',
-		'USER': 'root',
-		'PASSWORD': '822940!@!@',
-		'HOST': 'localhost',
-		'PORT':'3306',
+        'NAME': 'DB_confMail',
+        'USER': 'root',
+        'PASSWORD': '822940!@!@',
+        'HOST': 'localhost',
+        'PORT':'3306',
     }
 }
 
@@ -112,7 +112,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'Asia/Seoul'
 
 USE_I18N = True
 
@@ -125,3 +125,4 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.11/howto/static-files/
 
 STATIC_URL = '/static/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
