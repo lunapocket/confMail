@@ -28,7 +28,7 @@ SECRET_KEY = '0-xj_qd4pyru7ht9mryqo^av2hvazl_j(8%upx+fu(p=0skc-9'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['cmail.uy.to', '13.124.208.170','localhost','127.0.0.1']
+ALLOWED_HOSTS = ['cmail.uy.to', '35.177.34.56','localhost','127.0.0.1']
 
 
 # Application definition
@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'blog',
 ]
 
 MIDDLEWARE = [
